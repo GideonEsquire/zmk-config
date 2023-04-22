@@ -1,0 +1,16 @@
+if SHIELD_ARC_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "arc"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_ARC_LEFT || SHIELD_ARC_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
