@@ -131,7 +131,7 @@
       bindings = <
                         &trans         &kp UP          &trans                                                &trans         &to FUN     &to CTL    
         &to GAM1        &kp LEFT       &kp DOWN        &kp RIGHT          &trans            &trans           &kp BSPC       &kp DEL     &kp TAB    &trans    
-        &hm LCTRL ESC   &trans         &tans           &tans              &trans            &trans           &hm RSHIFT M   &hm RALT K  &hm RGUI Y &hm RCTRL ENTER
+        &hm LCTRL ESC   &trans         &trans          &trans             &trans            &trans           &hm RSHIFT M   &hm RALT K  &hm RGUI Y &hm RCTRL ENTER
         &trans          &trans                         &trans             &trans            &to ALP          &trans                     &trans     &trans    
       >;
     };
