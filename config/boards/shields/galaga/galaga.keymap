@@ -129,7 +129,7 @@
 
     EXT {
       bindings = <
-                        &trans         &kp UP          &trans                                                &trans         &to FUN     &to CTL    
+                        &trans         &kp UP          &trans                                                &trans         &sl FUN     &to CTL    
         &to GAM1        &kp LEFT       &kp DOWN        &kp RIGHT          &trans            &trans           &kp BSPC       &kp DEL     &kp TAB    &trans    
         &hm LCTRL ESC   &trans         &trans          &trans             &trans            &trans           &hm RSHIFT M   &hm RALT K  &hm RGUI Y &hm RCTRL ENTER
         &trans          &trans                         &trans             &trans            &to ALP          &trans                     &trans     &trans    
@@ -177,7 +177,7 @@
                              &kp AMPS       &kp SEMI    &kp MINUS                                                  &kp AT         &kp HASH        &kp BSLH                 
             &trans           &kp SQT        &kp COMMA   &kp DOT    &kp QMARK                       &kp EXCL        &kp TILDE      &kp UNDER       &kp DQT            &trans
             &trans           &hm RSHIFT RPAR   &hm RALT RBKT  &hm RGUI RBRC &hm RCTRL COLON        &hm LCTRL PIPE  &hm LGUI LBRC  &hm LALT LBKT   &hm LSHIFT LPAR    &trans
-            &trans           &trans                     &trans     &trans                          &trans          &trans                         &trans             &trans
+            &kp SPACE        &sl SYM                    &sl NUM_F  &to EXT_F              &kp SPACE       &sl SYM_F                      &sl NUM            &to EXT
       >;
     };
 
@@ -186,7 +186,8 @@
                              &kp N7      &kp N8   &kp N9                                                    &kp LT         &kp EQUAL       &kp GT                   
             &trans           &kp N4      &kp N5   &kp N6  &kp ENTER                         &kp COMMA       &kp MINUS      &kp STAR        &kp PLUS           &trans
             &trans           &hm RSHIFT N1   &hm RALT N2  &hm RGUI N3 &hm RCTRL DOT         &hm LCTRL FSLH  &hm LGUI DLLR  &hm LALT PRCNT  &hm LSHIFT CARET   &trans
-            &trans           &kp N0                  &trans     &trans                            &trans          &trans                         &trans             &trans
+            &kp SPACE        &sl N0                    &sl NUM_F  &to EXT_F              &kp SPACE       &sl SYM_F                      &sl NUM            &to EXT
+
       >;
     };
 
@@ -195,16 +196,16 @@
                              &kp F7         &kp F8      &kp F9                                     &kp F12        &kp F11         &kp F10                  
             &trans           &kp F4         &kp F5      &kp F6     &trans          &trans          &trans         &trans          &trans             &trans  
             &trans           &hm RSHIFT F1  &hm RALT F2 &hm RGUI F3 &trans         &trans          &trans         &trans          &trans             &trans    
-            &trans           &trans                     &trans     &trans          &trans          &trans                         &trans             &trans  
+            &kp SPACE        &sl SYM                    &sl NUM_F  &to EXT_F              &kp SPACE       &sl SYM_F                      &sl NUM            &to EXT
       >;
     };
 
     EXT_F {
       bindings = <
-                             &trans         &to FUN_F   &to CTL_F                                          &trans         &kp UP          &trans                   
+                             &trans         &sl FUN_F   &to CTL_F                                          &trans         &kp UP          &trans                   
             &trans           &kp BSPC       &kp DEL     &kp TAB    &trans                  &to GAM1_F      &kp LEFT       &kp DOWN        &kp RIGHT          &trans
             &trans           &hm RSHIFT M   &hm RALT K  &hm RGUI Y &hm RCTRL ENTER         &hm LCTRL ESC   &trans         &trans          &trans             &trans
-            &to ALP_F        &trans                     &trans     &trans                  &trans          &trans                         &trans             &trans
+            &kp ALP_F        &sl SYM                    &sl NUM_F  &to EXT_F              &kp SPACE       &sl SYM_F                      &sl NUM            &to EXT
       >;
     };
 
@@ -213,7 +214,7 @@
                              &kp C_VOL_UP   &kp C_BRI_UP  &trans                                            &trans         &trans          &trans                   
             &trans           &kp C_VOL_DN   &kp C_BRI_DN  &trans        &trans              &trans          &trans         &trans          &trans             &trans
             &trans           &bt BT_SEL 0   &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR          &trans          &trans         &trans          &trans             &trans
-            &kp C_PP         &trans                       &trans        &trans              &trans          &trans                         &trans             &trans
+            &kp C_PP          &sl SYM                    &sl NUM_F  &to EXT_F              &kp SPACE       &sl SYM_F                      &sl NUM            &to EXT
       >;
     };
 
@@ -222,16 +223,18 @@
                              &trans         &trans      &trans                                    &kp Q          &kp W           &kp E                    
             &trans           &trans         &trans      &trans     &trans         &kp TAB         &kp A          &kp S           &kp D              &trans   
             &trans           &trans         &trans      &trans     &trans         &sl GAM2_F      &hm LGUI Z     &hm LALT X      &hm LSHIFT C       &trans    
-            &trans           &trans                     &trans     &trans         &trans          &trans                         &kp SPACE          &trans   
+            &kp SPACE        &sl SYM                    &sl NUM_F  &to EXT_F      &kp SPACE       &sl SYM_F                      &kp SPACE          &to EXT
+
       >;
     };
 
     GAM2_F {
       bindings = <
-                             &trans         &trans      &trans                                    &kp N4      &kp N5       &kp N6                
-            &trans           &trans         &trans      &trans     &trans         &kp ENTER       &kp N1      &kp N2       &kp N3          &trans   
+                             &trans         &trans      &trans                                    &kp N4         &kp N5          &kp N6                
+            &trans           &trans         &trans      &trans     &trans         &kp ENTER       &kp N1         &kp N2          &kp N3             &trans   
             &trans           &trans         &trans      &trans     &trans         &kp ESC         &hm LGUI J     &hm LALT K      &hm LSHIFT L       &trans    
-            &trans           &trans                     &trans     &trans         &trans          &trans                         &kp SPACE          &trans   
+            &kp SPACE        &sl SYM                    &sl NUM_F  &to EXT_F      &kp SPACE       &sl SYM_F                      &kp SPACE          &to EXT
+
       >;
     };
 
