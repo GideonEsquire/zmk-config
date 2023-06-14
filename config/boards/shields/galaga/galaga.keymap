@@ -41,49 +41,49 @@
     combo_Z {
       layers = <0>;
       timeout-ms = <50>;
-      key-positions = <18 19>;
+      key-positions = <17 18>;
       bindings = <&kp Z>;
     };
     combo_Q {
       layers = <0>;
       timeout-ms = <50>;
-      key-positions = <19 20>;
+      key-positions = <18 19>;
       bindings = <&kp Q>;
     };
     combo_J {
       layers = <0>;
       timeout-ms = <50>;
-      key-positions = <23 24>;
+      key-positions = <22 23>;
       bindings = <&kp J>;
     };
     combo_X {
       layers = <0>;
       timeout-ms = <50>;
-      key-positions = <24 25>;
+      key-positions = <23 24>;
       bindings = <&kp X>;
     };
     combo_Z_F {
       layers = <8>;
       timeout-ms = <50>;
-      key-positions = <23 24>;
+      key-positions = <22 23>;
       bindings = <&kp Z>;
     };
     combo_Q_F {
       layers = <8>;
       timeout-ms = <50>;
-      key-positions = <24 25>;
+      key-positions = <23 24>;
       bindings = <&kp Q>;
     };
     combo_J_F {
       layers = <8>;
       timeout-ms = <50>;
-      key-positions = <18 19>;
+      key-positions = <17 18>;
       bindings = <&kp J>;
     };
     combo_X_F {
       layers = <8>;
       timeout-ms = <50>;
-      key-positions = <19 20>;
+      key-positions = <18 19>;
       bindings = <&kp X>;
     };
   };
@@ -111,10 +111,10 @@
 
     NUM {
       bindings = <
-                        &kp LT         &kp EQUAL       &kp GT                                                &kp KP_N7      &kp KP_N8   &kp KP_N9  
-        &kp COMMA       &kp MINUS      &kp STAR        &kp PLUS           &trans            &trans           &kp KP_N4      &kp KP_N5   &kp KP_N6  &kp ENTER
-        &hm LCTRL FSLH  &hm LGUI DLLR  &hm LALT PRCNT  &hm LSHIFT CARET   &trans            &trans           &hm RSHIFT KP_N1   &hm RALT KP_N2  &hm RGUI KP_N3 &hm RCTRL DOT
-        &trans          &trans                         &trans             &trans            &trans           &kp KP_N0                  &trans     &trans    
+                        &kp LT         &kp EQUAL       &kp GT                                                &kp N7      &kp N8   &kp N9  
+        &kp COMMA       &kp MINUS      &kp STAR        &kp PLUS           &trans            &trans           &kp N4      &kp N5   &kp N6  &kp ENTER
+        &hm LCTRL FSLH  &hm LGUI DLLR  &hm LALT PRCNT  &hm LSHIFT CARET   &trans            &trans           &hm RSHIFT N1   &hm RALT N2  &hm RGUI N3 &hm RCTRL DOT
+        &trans          &trans                         &trans             &trans            &trans           &kp N0                  &trans     &trans    
       >;
     };
 
@@ -156,8 +156,8 @@
 
     GAM2 {
       bindings = <
-                        &kp KP_N4      &kp KP_N5       &kp KP_N6                                             &trans         &trans      &trans     
-        &kp ENTER       &kp KP_N1      &kp KP_N2       &kp KP_N3          &trans            &trans           &trans         &trans      &trans     &trans    
+                        &kp N4      &kp N5       &kp N6                                             &trans         &trans      &trans     
+        &kp ENTER       &kp N1      &kp N2       &kp N3          &trans            &trans           &trans         &trans      &trans     &trans    
         &kp ESC         &hm LGUI J     &hm LALT K      &hm LSHIFT L       &trans            &trans           &trans         &trans      &trans     &trans     
         &trans          &trans                         &kp SPACE          &trans            &trans           &trans                     &trans     &trans    
       >;
@@ -183,10 +183,10 @@
 
     NUM_F {
       bindings = <
-                             &kp KP_N7      &kp KP_N8   &kp KP_N9                                                    &kp LT         &kp EQUAL       &kp GT                   
-            &trans           &kp KP_N4      &kp KP_N5   &kp KP_N6  &kp ENTER                         &kp COMMA       &kp MINUS      &kp STAR        &kp PLUS           &trans
-            &trans           &hm RSHIFT KP_N1   &hm RALT KP_N2  &hm RGUI KP_N3 &hm RCTRL DOT         &hm LCTRL FSLH  &hm LGUI DLLR  &hm LALT PRCNT  &hm LSHIFT CARET   &trans
-            &trans           &kp KP_N0                  &trans     &trans                            &trans          &trans                         &trans             &trans
+                             &kp N7      &kp N8   &kp N9                                                    &kp LT         &kp EQUAL       &kp GT                   
+            &trans           &kp N4      &kp N5   &kp N6  &kp ENTER                         &kp COMMA       &kp MINUS      &kp STAR        &kp PLUS           &trans
+            &trans           &hm RSHIFT N1   &hm RALT N2  &hm RGUI N3 &hm RCTRL DOT         &hm LCTRL FSLH  &hm LGUI DLLR  &hm LALT PRCNT  &hm LSHIFT CARET   &trans
+            &trans           &kp N0                  &trans     &trans                            &trans          &trans                         &trans             &trans
       >;
     };
 
@@ -228,8 +228,8 @@
 
     GAM2_F {
       bindings = <
-                             &trans         &trans      &trans                                    &kp KP_N4      &kp KP_N5       &kp KP_N6                
-            &trans           &trans         &trans      &trans     &trans         &kp ENTER       &kp KP_N1      &kp KP_N2       &kp KP_N3          &trans   
+                             &trans         &trans      &trans                                    &kp N4      &kp N5       &kp N6                
+            &trans           &trans         &trans      &trans     &trans         &kp ENTER       &kp N1      &kp N2       &kp N3          &trans   
             &trans           &trans         &trans      &trans     &trans         &kp ESC         &hm LGUI J     &hm LALT K      &hm LSHIFT L       &trans    
             &trans           &trans                     &trans     &trans         &trans          &trans                         &kp SPACE          &trans   
       >;
