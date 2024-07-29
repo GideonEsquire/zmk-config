@@ -112,8 +112,8 @@
     NUM {
       bindings = <
                         &kp LT         &kp EQUAL       &kp GT                                                &kp N7      &kp N8   &kp N9  
-        &kp COMMA       &kp MINUS      &kp STAR        &kp PLUS           &trans            &trans           &kp N4      &kp N5   &kp N6  &kp ENTER
-        &hm LCTRL FSLH  &hm LGUI DLLR  &hm LALT PRCNT  &hm LSHIFT CARET   &trans            &trans           &hm RSHIFT N1   &hm RALT N2  &hm RGUI N3 &hm RCTRL DOT
+        &kp GRAVE       &kp MINUS      &kp STAR        &kp PLUS           &trans            &trans           &kp N4      &kp N5   &kp N6  &kp ENTER
+        &hm LCTRL FSLH  &hm LGUI CARET &hm LALT PRCNT  &hm LSHIFT DLLR    &trans            &trans           &hm RSHIFT N1   &hm RALT N2  &hm RGUI N3 &hm RCTRL DOT
         &trans          &trans                         &trans             &trans            &trans           &kp N0                  &trans     &trans    
       >;
     };
@@ -184,8 +184,8 @@
     NUM_F {
       bindings = <
                              &kp N7      &kp N8   &kp N9                                                    &kp LT         &kp EQUAL       &kp GT                   
-            &trans           &kp N4      &kp N5   &kp N6  &kp ENTER                         &kp COMMA       &kp MINUS      &kp STAR        &kp PLUS           &trans
-            &trans           &hm RSHIFT N1   &hm RALT N2  &hm RGUI N3 &hm RCTRL DOT         &hm LCTRL FSLH  &hm LGUI DLLR  &hm LALT PRCNT  &hm LSHIFT CARET   &trans
+            &trans           &kp N4      &kp N5   &kp N6  &kp ENTER                         &kp GRAVE       &kp MINUS      &kp STAR        &kp PLUS           &trans
+            &trans           &hm RSHIFT N1   &hm RALT N2  &hm RGUI N3 &hm RCTRL DOT         &hm LCTRL FSLH  &hm LGUI CARET &hm LALT PRCNT  &hm LSHIFT DLLR    &trans
             &trans           &kp N0                  &trans     &trans                            &trans          &trans                         &trans             &trans
       >;
     };
@@ -220,8 +220,8 @@
     GAM1_F {
       bindings = <
                              &trans         &trans      &trans                                    &kp Q          &kp W           &kp E                    
-            &trans           &trans         &trans      &trans     &trans         &sl GAM2_F      &kp A          &kp S           &kp D              &trans   
-            &trans           &hm RSHIFT M   &hm RALT K  &hm RGUI Y &hm RCTRL I    &hm LCTRL ESC   &hm LGUI Z     &hm LALT X      &hm LSHIFT C       &trans    
+            &trans           &trans         &trans      &trans     &trans         &kp TAB      &kp A          &kp S           &kp D              &trans   
+            &trans           &hm RSHIFT M   &hm RALT K  &hm RGUI Y &hm RCTRL I    &sl GAM2_F   &hm LGUI Z     &hm LALT X      &hm LSHIFT C       &trans    
             &trans           &trans                     &trans     &trans         &trans          &trans                         &kp SPACE          &trans   
       >;
     };
